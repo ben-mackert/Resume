@@ -1,0 +1,117 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{mathptmx}
+
+\renewcommand{\familydefault}{\rmdefault}
+\linespread{1.05}
+
+% ---------- section formatting ----------
+\titleformat{\section}{\normalfont\large\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{1em}{0.2em}
+
+\newcommand{\sectionline}{\vspace{0.2em}\hrule\vspace{0.4em}}
+
+% ---------- lists ----------
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep,topsep=0pt,leftmargin=*}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+  {\LARGE \textbf{Ben Mackert}}\\
+  (303) 551-4217 \quad|\quad \href{mailto:benmackert@gmail.com}{benmackert@gmail.com} \quad|\quad Denver, CO\\
+  \href{https://www.linkedin.com/in/ben-mackert/}{linkedin.com/in/ben-mackert}
+\end{center}
+
+%---------------------------
+\section*{Education}
+\sectionline
+
+\textbf{University of Colorado Boulder}, Boulder, CO\\
+\textit{B.S. Electrical and Computer Engineering} \hfill Expected May 2027\\
+GPA 3.8, Dean’s List
+
+%---------------------------
+\section*{Technical Courses}
+\sectionline
+
+\begin{itemize}[leftmargin=*]
+  \item Circuits I (A), Circuits II (A), Electronics Design Lab (A–)
+  \item Data Structures (A), Prog. Digital Systems (A–), Physics II (A)
+  \item Calculus I (A, AP 5), Calculus II (A–), Calculus III (A–)
+\end{itemize}
+
+
+%---------------------------
+\section*{Skills}
+\sectionline
+
+\textbf{Languages:} C++, Python, RISC-V Assembly, Arduino, Verilog, LaTeX, Java, HTML, CSS
+
+\textbf{Softwares:} Altium Designer, SolidWorks, LTspice, Arduino IDE, VS Code, GitHub, Excel
+
+\textbf{Hardware \& Testing:} PCB Design, SMD, THT, Soldering, Oscilloscopes, Function Generators, DMM, Power Supplies
+
+\textbf{Core Engineering Skills:} Circuit Design, Embedded Systems, Digital Logic, Algorithms
+
+\textbf{Professional Skills:} Technical Communication, Team Collaboration, Presentation, Documentation
+
+
+%---------------------------
+\section*{Experience}
+\sectionline
+
+\textbf{Engineering Intern – CONMED Corporation} \hfill May 2025 -- Aug 2025
+
+\begin{itemize}
+  \item Designed and built an auto-calibration system (Arduino Nano Every + digital potentiometer) to map ESU voltages to resistance using a 4\textsuperscript{th}-degree polynomial.
+  \item Designed a custom PCB in Altium for the calibration hardware, integrating a resistor ladder with MCU control.
+  \item Created a Python GUI (Tkinter) and backend (serial comms + Matplotlib) to display real-time calibration plots.
+  \item Reduced calibration error by 92.5\%, enabling full transformer compatibility and cutting manufacturing scrap.
+  \item Simulated 3- and 4-point calibration in Python; achieved LMS errors as low as 1.76~$\Omega^2$ across transformer models.
+  \item Delivered three Python tools for modeling and documented findings in an internal engineering report.
+\end{itemize}
+
+
+
+
+%---------------------------
+\section*{Projects}
+\sectionline
+
+\textbf{STM32 Microcontroller PCB – Bluetooth \& USB-C}
+
+\begin{itemize}
+ \item Created a 4-layer PCB with STM32 MCU in Altium Designer, routing for Bluetooth and USB-C integration.
+  \item Achieved 480 Mbps USB-C data and BLE telemetry for wireless diagnostics between devices in testing scenarios.
+  \item Optimized high-speed signal routing against EMI by collaborating with 3 engineers on layout constraints and PCB stack-up.
+  \item Engineered oscilloscope-based test methods, boosting debugging efficiency by 20\% and accelerating bring-up.
+\end{itemize}
+
+\textbf{Restaurant Review Backend App}
+
+\begin{itemize}
+  \item Built a modular data store in C++ to manage structured reviews, enabling filtered queries in under 100 ms.
+  \item Optimized search performance using hash maps and binary search trees; improved throughput and load handling by 40\%.
+  \item Managed Git repository with isolated feature branches; reviewed, tested, and merged 10 pull requests with clean commits.
+  \item Refined user input and query handling across 4 iterative versions, cutting user-reported bugs by over 30\%.
+\end{itemize}
+
+\textbf{Home Security System – Arduino Prototype}
+
+\begin{itemize}
+  \item Developed a PIR-triggered security alarm using Arduino Uno, covering a 15 ft motion-detection zone with buzzer feedback.
+  \item Soldered and assembled THT components onto a custom-designed PCB; passed 100-cycle stress and functionality test.
+  \item Implemented motion detection logic with audible buzzer response and logged 50+ events via serial monitor.
+  \item Delivered 3 successive PCB revisions with updated schematics and BOMs, improving reliability and reducing false triggers.
+\end{itemize}
+
+
+\end{document}
